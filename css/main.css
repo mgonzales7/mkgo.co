@@ -1,0 +1,41 @@
+body {
+  background-color: #6699cc;
+}
+.center{
+  bottom: 0;
+  height: 100px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 600px;
+}
+.profile {
+  text-align: center;
+}
+.profile img{
+	height: 100px;
+	width: 100px;
+}
+.links {
+  text-align: center;
+  padding-top: 20px;
+}
+.links ul{
+  margin:0;
+  padding: 0;
+}
+.links li {
+  height: 60px;
+  display: inline;
+}
+
+.links a{
+  font-family: 'Play', sans-serif;
+  color: white;
+  font-size: 20px;
+  padding: 10px 10px 10px 20px;
+  text-transform: uppercase;
+  height: 45px;
+}
