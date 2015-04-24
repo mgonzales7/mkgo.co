@@ -13,29 +13,32 @@ body {
 }
 .profile {
   text-align: center;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
 }
 .profile img{
-	height: 100px;
-	width: 100px;
+
 }
 .links {
   text-align: center;
   padding-top: 20px;
 }
-.links ul{
-  margin:0;
-  padding: 0;
-}
-.links li {
-  height: 60px;
-  display: inline;
-}
+
 
 .links a{
   font-family: 'Play', sans-serif;
   color: white;
   font-size: 20px;
-  padding: 10px 10px 10px 20px;
   text-transform: uppercase;
   height: 45px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-style:solid;
+  border-width:medium;
+}
+.links a:hover{
+  text-decoration: none;
+
+
 }
