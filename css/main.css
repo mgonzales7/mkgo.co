@@ -9,7 +9,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 600px;
+  background-color:white;
 }
 .profile {
   text-align: center;
