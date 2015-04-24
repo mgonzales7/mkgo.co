@@ -11,13 +11,23 @@ body {
   right: 0;
   width: 600px;
 }
+.profile li {
+  display: inline;
+}
 .profile {
+
   text-align: center;
   height: 100px;
-  width: 100px;
+  width: 600px;
   margin: 0 auto;
 }
-.profile img{
+.icon {
+  height: 64px;
+  width: 64px;
+}
+.face{
+  height: 100px;
+  width: 100px;
 
 }
 .links {
