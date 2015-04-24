@@ -11,6 +11,9 @@ body {
   right: 0;
   background-color:white;
 }
+.profile ul {
+  padding:0;
+}
 .profile li {
   display: inline;
 }
@@ -32,7 +35,6 @@ body {
 .links {
   text-align: center;
   padding-top: 20px;
-  padding-left: 40px;
 }
 
 
