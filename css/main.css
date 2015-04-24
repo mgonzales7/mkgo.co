@@ -18,12 +18,11 @@ body {
 
   text-align: center;
   height: 100px;
-  width: 600px;
   margin: 0 auto;
 }
 .icon {
-  height: 64px;
-  width: 64px;
+  height: 32px;
+  width: 32px;
 }
 .face{
   height: 100px;
