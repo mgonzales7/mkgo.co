@@ -1,7 +1,7 @@
 body {
   background-image:url("../res/fordham.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+ background-position: 30% 30%;
+ background-repeat: no-repeat;
 }
 .center{
   bottom: 0;
@@ -51,6 +51,7 @@ body {
   padding-right: 10px;
   border-style:solid;
   border-width:medium;
+   background-color: rgba(0, 0, 0, 0.4);
 }
 .links a:hover{
   text-decoration: none;
@@ -80,6 +81,7 @@ body {
   padding-right: 10px;
   border-style:solid;
   border-width:medium;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .button a:hover{
   text-decoration: none;
