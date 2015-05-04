@@ -1,5 +1,8 @@
 body {
-  background-color: #6699cc;
+  background-image:url("../res/fordham.jpg");
+  background-size: cover;
+  background-position-y: 20%;
+  background-position-x: 35%;
 }
 .center{
   bottom: 0;
@@ -9,7 +12,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  background-color:white;
+  background-color: rgba(255, 0, 0, 0.4);
 }
 .profile ul {
   padding:0;
@@ -33,6 +36,7 @@ body {
 
 }
 .links {
+  display:none;
   text-align: center;
   padding-top: 20px;
 }
@@ -53,4 +57,37 @@ body {
   text-decoration: none;
 
 
+}
+.links ul{
+  padding: 0px;
+}
+.links li {
+  display: inline;
+}
+
+.button {
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+.button a{
+  font-family: 'Play', sans-serif;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  height: 45px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-style:solid;
+  border-width:medium;
+}
+.button a:hover{
+  text-decoration: none;
+
+
+}
+.vector {
+  height: 20px;
+  width: 20px;
 }
