@@ -47,7 +47,7 @@ var main = function() {
    		}
    	}, 300);
    	if (expShown===true){
-  		  $('#Experience').fadeToggle(600);
+  		  $('#Experience').fadeToggle(300);
   		  expShown=false;
   		}
 
