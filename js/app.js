@@ -1,6 +1,8 @@
 
 var expShown = false;
 var projShown = false;
+var contShown = false;
+var time = 0;
 
 var main = function() {
   $('.button').click(function() {
@@ -10,23 +12,31 @@ var main = function() {
   });
   $('.return').click(function() {
   	  setTimeout(function() {
+    time = 1000;
     $('.links').fadeToggle(0);
     $('.button').fadeToggle(900);
     if (expShown===true){
   		  $('#Experience').fadeToggle(600);
   		  expShown=false;
+        time = 1000;
   		}
   	if (projShown===true){
   		  $('#project').fadeToggle(600);
   		  projShown=false;
+        time = 1000;
   	}
-  	   }, 1000);
+    if (contShown===true){
+        $('#contact').fadeToggle(600);
+        contShown=false;
+    }
+  	   }, time);
 
 
 
   });
   $('.exp').click(function() {
   	setTimeout(function() {
+      time = 1000;
   	if (expShown===false){
    		 $('#Experience').fadeToggle(600);
    		 expShown=true;
@@ -36,10 +46,15 @@ var main = function() {
   		  $('#project').fadeToggle(600);
   		  projShown=false;
   		}
+    if (contShown===true){
+        $('#contact').fadeToggle(300);
+        contShown=false;
+      }  
 
   });
   $('.proj').click(function() {
   	setTimeout(function() {
+      time = 1000;
     	if (projShown===false){
    		 $('#project').fadeToggle(600);
    		 projShown=true;
@@ -50,6 +65,29 @@ var main = function() {
   		  $('#Experience').fadeToggle(300);
   		  expShown=false;
   		}
+    if (contShown===true){
+        $('#contact').fadeToggle(300);
+        contShown=false;
+      }
+
+  });
+    $('.cont').click(function() {
+    setTimeout(function() {
+      time = 1000;
+      if (contShown===false){
+       $('#contact').fadeToggle(600);
+       contShown=true;
+       
+      }
+    }, 300);
+    if (expShown===true){
+        $('#Experience').fadeToggle(300);
+        expShown=false;
+      }
+    if (projShown===true){
+        $('#project').fadeToggle(300);
+        projShown=false;
+      }
 
   });
  

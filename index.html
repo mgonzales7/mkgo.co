@@ -2,11 +2,13 @@
 <html>
     <head>
       <link href='http://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Michael Gonzales</title>
-      <link rel="icon" type="image/png" href="res/Logo.png" />
+      <link rel="icon" type="image/png" href="res/favicon.png" />
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link href="media-queries.css" rel="stylesheet" type="text/css">
       <link rel="stylesheet" href="css/main.css">
@@ -21,10 +23,15 @@
 
     </head>
     <body>
+      <div id="top">
+      </div>
+      <div class = signature>
+        <h1>Michael Gonzales</h1>
+        <p> Code, Design, Creativity <p>
+      </div>
 
 	<div class = container>
-    <div id="top">
-      </div>
+    
         <div class="center" id ="home">
            <div class = "profile">
              <ul>
@@ -38,13 +45,20 @@
            <div class="button">
              <a href="#">Learn More</a></li>
             </div>
+          <div class ="container">
+          <div class = "row">
+            <div class = "col-md-6 col-md-offset-3">
           <div class="links">
             <ul>
               <li class="exp"><a href="#Experience">Experience</a></li>
               <li class="proj"><a href="#project">Projects</a></li>
-               <li class="return"><a href="#">^</a></li>
+              <li class="cont"><a href="#contact">Contact</a></li>
+              <li class="return"><a href="#">^</a></li>
             </ul>
           </div>
+        </div>
+      </div>
+        </div>
           <div id="Experience">
             <div class="container">
               <div class="row">
@@ -53,18 +67,15 @@
                  <div class = "text">
                  <h3>Web Developer</h3>
                   <h6>Kollaboration New York (January 2015 - Present)</h6>
-                  <p>Non-Profit to promote the cause of AAPI (Asian American and Pacific Islander) youth trying to get into the entertainment industry.</p>
-                  <p> I am a member of Kollaboration's Web Development team.
-                Working in HTML/CSS and PHP on Kollaboration's website which you can view <a href="http://www.kollaborationnewyork.org/">here</a></p>
+                  <p> I am a member of Kollaboration's Web Development team. We work in HTML/CSS and PHP on Kollaboration's website which you can view <a href="http://www.kollaborationnewyork.org/">here</a></p>
                   </div>
                </div>
                <div class = "col-md-6">
                  <img src="res/working.jpg" class ="img-responsive" title="#STAYFORTHECODE">
                   <div class = "text">
-                 <h3>IT analyst</h3>
+                 <h3>IT Analyst</h3>
                  <h6>Fordham University (August 2013 - Present)</h6>
-                  <p>I serve the Fordham community with tech related assistance.</p>
-                 <p>Troubleshoot and resolve computer related issues</p>
+                  <p>I serve the Fordham community with tech related assistance. My duties are to troubleshoot and resolve computer related issues</p>
                </div>
                </div>
              </div>
@@ -104,6 +115,69 @@
                </div>
              </div>
             </div>
+          </div>
+          <div id="contact">
+            <div class = "container">
+              <div class="row">
+                <div class = "col-md-1 col-md-offset-3">
+                  <div class = "ico">
+                    <span class="glyphicon glyphicon-folder-open"></span>
+                  </div>
+               </div>
+               <div class = "col-md-3">
+                  <div class = "text2">
+                    <h3>Resume download:  <a href="res/MichaelGo_resume.pdf" target="_blank" download><button type ="button" class ="btn btn-default"><span class="glyphicon glyphicon-download-alt"></span></button></a></h3>
+                  </div>
+               </div>
+             </div>
+              <div class="row">
+                <div class = "col-md-1 col-md-offset-3">
+                  <div class = "ico">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                  </div>
+               </div>
+               <div class = "col-md-4">
+                  <div class = "text2">
+                    <h3>Email: mgonzales7@fordham.edu</h3>
+                  </div>
+               </div>
+             </div>
+            </div>
+
+            <div id="form-container" class="container">
+                    <div id="contact_form" class="row">
+                        <div class="col-6 col-sm-6 col-lg-6 col-sm-offset-3">
+                            <h2>Feedback</h2>
+                            <form role="form" id="feedbackForm">
+                                <div class="form-group has-feedback">
+                                    <label class="control-label" for="name">Name</label>
+                                    <input type="text" class="form-control input-sm" id="name" name="name" />
+                                    <span class="help-block" style="display: none;">Please enter your name.</span>
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <label class="control-label" for="phone">Phone</label>
+                                    <input type="tel" class="form-control input-sm optional" id="phone" name="phone" />
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <label class="control-label" for="email">Email Address</label>
+                                    <input type="email" class="form-control input-sm" id="email" name="email" />
+                                    <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <label class="control-label" for="message">Message*</label>
+                                    <textarea rows="5" cols="30" class="form-control input-sm" id="message" name="message"></textarea>
+                                    <span class="help-block" style="display: none;">Please enter a message.</span>
+                                </div>
+                                <button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg" data-loading-text="Sending..." style="display: block; margin: 0 auto;">Send Feedback</button>
+                            </form>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>        
+
+
           </div>
      </div>
 	</div>

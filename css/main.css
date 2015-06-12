@@ -1,10 +1,93 @@
+body{
+  background-color: #03A9F4;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 html { 
-  background: url("../res/fordham.jpg") no-repeat center center fixed; 
+  background-color: #03A9F4;
+  //background: url("../res/fordham.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100%;
+}
+.signature {
+  font-family: 'Nothing You Could Do', cursive;
+  background-color:#03A9F4;
+  text-align: center;
+  padding-top: 170px;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.signature h1{
+  font-size: 50px;
 }
 
 .center{
@@ -15,7 +98,8 @@ html {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: rgba(255, 0, 0, 0.4);
+  background-color:#B3E5FC;
+
 }
 .profile ul {
   padding:0;
@@ -23,6 +107,7 @@ html {
 .profile li {
   display: inline;
   padding: 5px 5px 5px 5px;
+  white-space: nowrap;  
 }
 .profile {
 
@@ -47,6 +132,7 @@ html {
 
 
 .links a{
+   box-shadow: 5px 5px 5px black;
   font-family: 'Play', sans-serif;
   color: white;
   font-size: 20px;
@@ -57,6 +143,7 @@ html {
   border-style:solid;
   border-width:medium;
    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 40px;
 }
 .links a:hover{
   text-decoration: none;
@@ -68,16 +155,19 @@ html {
 }
 .links li {
   display: inline;
+      margin-top: 50px;
 }
 
 .button {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+
 }
 
 
 .button a{
+   box-shadow: 5px 5px 5px black;
   font-family: 'Play', sans-serif;
   color: white;
   font-size: 20px;
@@ -101,7 +191,6 @@ html {
 #Experience{
     display:none;
   padding-top: 10px;
-   background: rgba(0,0,0,0.5);
 
 }
 #Experience h3, h6{
@@ -109,14 +198,14 @@ html {
    text-align: center;
 }
 #Experience img{
+     box-shadow: 5px 5px 5px black;
     display: block;
     margin-left: auto;
-    margin-right: auto 
+    margin-right: auto;
 }
 #project{
       display:none;
   padding-top: 10px;
-  background: rgba(0,0,0,0.5);
 
 }
 #project h3, h6{
@@ -124,20 +213,45 @@ html {
    text-align: center;
 }
 #project img{
+   box-shadow: 5px 5px 5px black;
     display: block;
     margin-left: auto;
     margin-right: auto 
 }
 .text {
-  font-family: 'Play', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
-  background: rgba(255,0,0,0.5);
-    border-radius:20px;
-    color: white;
+  background-color: #E1F5FE;
+  box-shadow: 5px 5px 5px black;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .text a{
   color: blue;
 }
+.text p {
+  padding-bottom: 4px;
+}
+.text h3 {
+  padding-top: 4px;
+}
 #top {
   visibility: hidden;
+}
+#contact{
+    display:none;
+  padding-top: 10px;
+
+}
+#contact h2, h3, h6{
+   font-family: 'Play', sans-serif;
+   text-align: center;
+}
+.ico {
+ text-align: center;
+  font-size: 50px;
+}
+.text2 {
+  text-align: center;
+  white-space: nowrap;
 }
