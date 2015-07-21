@@ -258,6 +258,38 @@ html {
   font-size: 50px;
 }
 .text2 {
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
-  white-space: nowrap;
+  background-color: #E1F5FE;
+  box-shadow: 5px 5px 5px black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.text2 a{
+  color: black;
+}
+.info{
+  display:none;
+  padding-top: 370px;
+   position: fixed;
+  bottom: 0;
+  height: 800px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background:rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  z-index: 20;
+}
+.box {
+  //height: 300px;
+ background-color: #E1F5FE;
+  box-shadow: 5px 5px 5px black;
+
+}
+.info h3{
+ 
+  font-family: 'Open Sans', sans-serif;
 }

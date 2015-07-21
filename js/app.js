@@ -90,6 +90,13 @@ var main = function() {
       }
 
   });
+
+    $('.email').click(function() {
+       $('.info').fadeToggle(600);
+    });
+     $('.info').click(function() {
+       $('.info').fadeToggle(600);
+    });
  
   $('a[href*=#]').click(function(e) {
   	
