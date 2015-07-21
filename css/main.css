@@ -49,7 +49,13 @@ html {
   font-family: 'Nothing You Could Do', cursive;
   background-color:#03A9F4;
   text-align: center;
-  padding-top: 170px;
+  bottom: 0;
+  height: 350px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */
