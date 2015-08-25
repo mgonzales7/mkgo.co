@@ -1,3 +1,3 @@
-Testing
+My Porfolio Website
 ==============
-This is for testing purposes
+Uses JS, Jquery, Boostrap
