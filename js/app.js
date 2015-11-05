@@ -5,14 +5,17 @@ var contShown = false;
 var time = 0;
 
 var main = function() {
+  $("body").css("overflow", "hidden");
+  $('html,body').animate({
+                   scrollTop: ($("#top").top) - 50
+              }, 1000, 'swing');
   $('.button').click(function() {
-    $('.links').fadeToggle(600);
-    $(this).fadeToggle(100);
-
+    $.when($(this).fadeToggle(100)).done($('.links').fadeToggle(1000));
   });
+
   $('.return').click(function() {
+    $("body").css("overflow", "hidden");
   	  setTimeout(function() {
-    time = 1000;
     $('.links').fadeToggle(0);
     $('.button').fadeToggle(900);
     if (expShown===true){
@@ -29,12 +32,14 @@ var main = function() {
         $('#contact').fadeToggle(600);
         contShown=false;
     }
+    time = 100;
   	   }, time);
 
 
 
   });
   $('.exp').click(function() {
+    $("body").css("overflow", "scroll");
   	setTimeout(function() {
       time = 1000;
   	if (expShown===false){
@@ -53,6 +58,7 @@ var main = function() {
 
   });
   $('.proj').click(function() {
+    $("body").css("overflow", "scroll");
   	setTimeout(function() {
       time = 1000;
     	if (projShown===false){
@@ -72,6 +78,7 @@ var main = function() {
 
   });
     $('.cont').click(function() {
+      $("body").css("overflow", "scroll");
     setTimeout(function() {
       time = 1000;
       if (contShown===false){

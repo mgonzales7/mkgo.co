@@ -9,20 +9,22 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Michael Gonzales</title>
       <link rel="icon" type="image/png" href="res/favicon.png" />
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <link href="media-queries.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="css/bootstrap.min.css"/>
       <link rel="stylesheet" href="css/main.css">
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-            ga('create', 'UA-61340441-1', 'auto');
-            ga('send', 'pageview');
-      </script>
 
     </head>
     <body>
+<!-- Pure CSS Paralax Pixel Star Effect taken from http://codepen.io/saransh/pen/BKJun Made by @screenshake-->
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+  <span>
+    
+  </span>
+  <br>
+  <span>
+  </span>
+</div>
       <div class= "info">
         <div class= "container">
           <div class="row">
@@ -69,9 +71,31 @@
           </div>
         </div>
       </div>
-        </div>
+    </div>
+
+
+
+
           <div id="Experience">
             <div class="container">
+               <div class="row">
+               <div class ="col-md-6">
+                 <img src="res/looplabs.jpg" class ="img-responsive" title="#STAYFORTHECODE">
+                 <div class = "text">
+                 <h3>Web Application Intern</h3>
+                  <h6>Looplabs (October 2015 - Present)</h6>
+                  <p> Looplabs develops a cloud based music editing software. I assist with the developement of application features. You can check out Looplabs <a href="http://looplabs.com/">here</a></p>
+                  </div>
+               </div>
+               <div class = "col-md-6">
+                 <img src="res/lavner2.jpg" class ="img-responsive" title="#STAYFORTHECODE">
+                  <div class = "text">
+                 <h3>Technology Instructor</h3>
+                 <h6>Lavner Camps (July 2015 -  August 2015)</h6>
+                  <p>Instructor at a manhattan technology summer camp. Taught Java, Video Game Design, and Lego Robotics to kids ages 8-13. </p>
+               </div>
+               </div>
+             </div>
               <div class="row">
                <div class ="col-md-6">
                  <img src="res/kollab.png" class ="img-responsive" title="#STAYFORTHECODE">
@@ -85,13 +109,20 @@
                  <img src="res/working.jpg" class ="img-responsive" title="#STAYFORTHECODE">
                   <div class = "text">
                  <h3>IT Analyst</h3>
-                 <h6>Fordham University (August 2013 - Present)</h6>
+                 <h6>Fordham University (August 2013 - July 2015)</h6>
                   <p>I serve the Fordham community with tech related assistance. My duties are to troubleshoot and resolve computer related issues</p>
                </div>
                </div>
              </div>
             </div>
           </div>
+
+
+
+
+
+
+
           <div id="project">
             <div class="container">
               <div class="row">
@@ -127,13 +158,25 @@
              </div>
             </div>
           </div>
+
+
+
+
+
+
+
+
+
+
+
+
           <div id="contact">
             <div class = "container">
               <div class="row">
                <div class = "col-md-offset-3 col-md-3">
                   <div class = "text2"> 
                      <div class = "ico">
-                      <h3>Resume<!--:  <a href="res/MichaelGo_resume.pdf" target="_blank" download><button type ="button" class ="btn btn-default"><span class="glyphicon glyphicon-download-alt"></span></button></a>--></h3>
+                      <h3>Resume</h3>
                       <a href="res/MichaelGo_resume.pdf" target="_blank" download>
                     <span class="glyphicon glyphicon-folder-open"></span>
                     </a>
@@ -153,22 +196,19 @@
                   </div>
                 </div>
               </div>
-              <div class="row"> <!--
-                <div class = "col-md-1 col-md-offset-3">
-                  <div class = "ico">
-                    <span class="glyphicon glyphicon-envelope"></span>
-                  </div>
-               </div>
-             -->
+              <div class="row"> 
                
              </div>
             </div>
-            <!--
+            
             <div id="form-container" class="container">
                     <div id="contact_form" class="row">
-                        <div class="col-6 col-sm-6 col-lg-6 col-sm-offset-3">
+                        <div class="col-6 col-sm-6 col-lg-6 col-sm-offset-3" >
                             <h2>Feedback</h2>
-                            <form role="form" id="feedbackForm">
+                            <form role="form" id="feedbackForm" action="formmail.php" method="post">
+                                    <input type="hidden" name="recipients" value="michael@mkgo.co" />
+                                    <input type="hidden" name="subject" value="Form Submission" />
+                                    <input type="hidden" name="redirect" value="http://mkgo.co/">
                                 <div class="form-group has-feedback">
                                     <label class="control-label" for="name">Name</label>
                                     <input type="text" class="form-control input-sm" id="name" name="name" />
@@ -194,7 +234,7 @@
                     </div>
                     <hr>
                 </div>
-              -->
+              
             </div>
         </div>        
 
@@ -204,7 +244,7 @@
 	</div>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-      <script src="js/boostrap.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
       <script src="js/app.js"></script>
     </body>
 </html>
