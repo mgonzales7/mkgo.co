@@ -105,7 +105,7 @@ var main = function() {
        $('.info').fadeToggle(600);
     });
     $('#feedbackSubmit').click(function() {
-        $(this).value = "sending..."
+        $(this).html('sending...');
     });
  
   $('a[href*=#]').click(function(e) {
