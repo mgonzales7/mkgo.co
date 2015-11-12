@@ -104,6 +104,9 @@ var main = function() {
      $('.info').click(function() {
        $('.info').fadeToggle(600);
     });
+    $('#feedbackSubmit').click(function() {
+        $(this).value = "sending..."
+    });
  
   $('a[href*=#]').click(function(e) {
   	
