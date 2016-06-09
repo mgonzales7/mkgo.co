@@ -308,6 +308,10 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
+.img-responsive{
+  background-color: white;
+}
+
 label{
   color: white;
 }
